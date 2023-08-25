@@ -1,0 +1,104 @@
+.panel-background {
+  position: fixed;
+  inset: 0; /* inset sets all 4 values (top right bottom left) much like how we set padding, margin etc., */
+  background-color: rgba(0, 0, 0, 0.388);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  z-index: 999;
+  padding: 40px 20px 20px;
+}
+
+.panel-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  animation-duration: 0.55s;
+  animation-name: animate-slide-in; 
+  animation-fill-mode: backwards;
+}
+
+.panel-wrapper-exit {
+  animation-duration: 0.55s;
+  animation-name: animate-slide-out; 
+  animation-fill-mode: forwards;
+}
+
+.panel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.panel-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.panel-container-header {
+  background-color: rgb(232, 232, 232);
+  height: 120px;
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.panel-container-main {
+  flex-grow: 1;
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.panel-container-footer {
+  height: 80px;
+  width: 100%;
+  padding: 0px 30px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close {
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  /* bottom: 50%; */
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+@keyframes animate-slide-in {
+  0% {
+    opacity: 1;
+    width: 0;
+  }
+  100% {
+    opacity: 1;
+    width: 50%;
+  }
+}
+
+@keyframes animate-slide-out {
+  0% {
+    opacity: 1;
+    width: 50%;
+  }
+  100% {
+    opacity: 1;
+    width: 0;
+    right: -30px;
+  }
+}

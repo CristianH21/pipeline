@@ -1,0 +1,26 @@
+
+.carditem-title {
+  font-weight: 500;
+  font-size: 13px;
+  margin-bottom: 2px;
+  display: inline;
+}
+
+.carditem-subtitle {
+  font-size: 12px;
+  color: rgb(127 127 127);
+}
+
+.carditem-menu {
+  position: absolute;
+  content: "";
+  top: 3px;
+  right: 3px;
+}
+
+.carditem-tags {
+  display: flex;
+  flex-direction: row;
+  column-gap: 5px;
+  margin-top: 6px;
+}

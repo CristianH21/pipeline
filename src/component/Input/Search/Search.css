@@ -1,0 +1,8 @@
+.search {
+    width: 350px;
+}
+
+.search:focus {
+    outline: none;
+    box-shadow: 0.2rem 0.2rem 0.6rem #5e35b1;
+}

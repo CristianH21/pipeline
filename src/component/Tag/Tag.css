@@ -1,0 +1,8 @@
+.tag {
+    display: inline-block;
+    font-size: 10px;
+    background: bisque;
+    padding: 2px 4px;
+    border-radius: 5px;
+    border: 1px solid #fabb70;
+}

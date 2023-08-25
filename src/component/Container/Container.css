@@ -1,0 +1,21 @@
+.container {
+    min-width: 300px;
+    max-width: 300px;
+    /* background: #dadada; */
+    border-radius: 3px;
+    height: fit-content;
+    padding: 5px;
+    margin: 5px;
+    flex: 1;
+}
+
+.container-header {
+    padding: 3px 3px 12px 6px;
+    font-weight: bold;
+    color: #333;
+}
+
+.container-header__items-count {
+    margin-left: 10px;
+    color: rgb(89, 89, 89);
+}

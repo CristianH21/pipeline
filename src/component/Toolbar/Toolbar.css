@@ -1,0 +1,21 @@
+.toolbar {
+    height: 60px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+}
+
+.toolbar-brand {
+    flex: 1;
+}
+
+.toolbar-tools {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 36px;
+}
